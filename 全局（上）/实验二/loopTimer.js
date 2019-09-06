@@ -4,12 +4,11 @@
 //     setTimeout(console.log("Game over!"),5000);
 // },500);
 
-function a(){
-    setTimeout(function loop(){
-        console.log("I will loop forever!");
-    },5000);
+
+setInterval(function loop(){
+    console.log("I will loop forever!");
+},500);
+setTimeout(function(){
     console.log('Game over!');
     process.exit();
-    
-}
-a();
+},5000)
