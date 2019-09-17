@@ -1,17 +1,17 @@
 var student = {}
 var stu = ['Name','Email','QQ','Mobile'];
-var i = 0;
+var i = 1;
 console.log(stu[0] + ":")
 process.stdin.on("data",function(data){
-    if(i == 3){
+    student[stu[i-1]] = data.toString('utf8');
+    if(i == 4){
         console.log(student);
         process.exit();
         
     }
     else{
-        student[stu[i]] = data.toString('utf8');
-        i++;
-        console.log(stu[i] + ":");
+        
+        console.log(stu[i++] + ":");
     }
     
 });
