@@ -1,8 +1,8 @@
-var http = require("http");
-var url = require("url");
-var path = require("path");
-var fs = require("fs");
-var querystring = require("querystring");
+const http = require("http");
+const url = require("url");
+const path = require("path");
+const fs = require("fs");
+const querystring = require("querystring");
 
 http.createServer(function(req,res){
     var urlObj = url.parse(req.url);
